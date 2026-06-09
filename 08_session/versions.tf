@@ -26,7 +26,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project     = "monolith"
+      Project     = "08_Session"
       Purpose     = "getting-into-terraform"
       ManagedBy   = "terraform"
       Environment = var.environment
