@@ -49,7 +49,7 @@ resource "aws_cognito_user_pool_client" "hotel_users" {
     "ALLOW_USER_SRP_AUTH"
   ]
   lifecycle {
-    ignore_changes = [ generate_secret ]
+    ignore_changes = [generate_secret]
   }
 }
 
@@ -270,7 +270,7 @@ resource "aws_rds_cluster" "inventory" {
   }
 
   lifecycle {
-    ignore_changes = [ 
+    ignore_changes = [
       enable_global_write_forwarding,
       enable_local_write_forwarding,
       master_username,

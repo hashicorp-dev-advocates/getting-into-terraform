@@ -88,3 +88,8 @@ variable "elasticache_num_cache_nodes" {
   type        = number
   default     = 1
 }
+
+variable "tf_org" {
+  description = "HCP Terraform Organization"
+  type        = string
+}

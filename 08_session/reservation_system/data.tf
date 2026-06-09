@@ -8,9 +8,12 @@ data "aws_partition" "current" {}
 
 # Reference VPC module from root directory
 data "terraform_remote_state" "vpc" {
-  backend = "local"
+  backend = "remote"
 
   config = {
-    path = "${path.module}/../terraform.tfstate"
+    organization = "user-cdkc-9f7eed-org"
+    workspaces = {
+      name = "08_session_base_infrastructure"
+    }
   }
 }
