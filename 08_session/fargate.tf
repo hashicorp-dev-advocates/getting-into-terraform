@@ -1,0 +1,1 @@
+# Fargate resources migrated to reservation_system/resources.tf
